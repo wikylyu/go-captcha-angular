@@ -2,13 +2,17 @@
 
 ## 说明
 
-Angular实现的[go-captcha](https://github.com/wenlng/go-captcha)客户端示例代码。
+Angular实现的[go-captcha](https://github.com/wenlng/go-captcha)客户端示例代码，基于[@angular/cdk](https://material.angular.io/cdk).
 
 需要结合[go-captcha-example](https://github.com/wenlng/go-captcha-example)使用。
 
 只展示了最基本的功能，有额外需要的可以根据实际情况进行修改。
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+
+## 截图
+
+![截图](https://raw.githubusercontent.com/wikylyu/go-captcha-angular/master/screenshot/Screenshot.png)
 
 ## Development server
 
