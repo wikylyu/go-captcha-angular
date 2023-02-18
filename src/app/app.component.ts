@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'go-captcha-angular';
+  constructor(private title: Title) {
+    this.title.setTitle('go-captcha示例Angular版');
+  }
 }

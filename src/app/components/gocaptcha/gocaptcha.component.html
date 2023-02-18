@@ -1,0 +1,27 @@
+<div
+  id="button"
+  (click)="openPopup()"
+  class="button"
+  [ngClass]="{ opened: isPopupOpened, verified: isVerified }"
+  cdkOverlayOrigin
+  #trigger="cdkOverlayOrigin"
+>
+  <span *ngIf="!isPopupOpened">
+    <ng-container *ngIf="!isVerified">点击按钮进行人机验证</ng-container>
+    <ng-container *ngIf="isVerified">人机验证已通过 </ng-container>
+  </span>
+  <span *ngIf="isPopupOpened">正在进行人机验证</span>
+</div>
+
+<ng-template
+  cdkConnectedOverlay
+  cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
+  [cdkConnectedOverlayPositions]="positions"
+  [cdkConnectedOverlayHasBackdrop]="true"
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isPopupOpened"
+  (detach)="closePopup()"
+  (backdropClick)="closePopup()"
+>
+  <app-gocaptcha-dialog (verified)="onVerified($event)"></app-gocaptcha-dialog>
+</ng-template>
