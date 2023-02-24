@@ -2,9 +2,9 @@
 
 ## 说明
 
-Angular实现的[go-captcha](https://github.com/wenlng/go-captcha)客户端示例代码，基于[@angular/cdk](https://material.angular.io/cdk).
+Angular实现的[go-captcha](https://github.com/wenlng/go-captcha)客户端示例代码，基于[@angular/cdk](https://material.angular.io/cdk)。
 
-需要结合[go-captcha-example](https://github.com/wenlng/go-captcha-example)使用。
+须结合[go-captcha-example](https://github.com/wenlng/go-captcha-example)使用。本地测试时，可能须要根据实际情况修改[go-captcha-example](https://github.com/wenlng/go-captcha-example)的代码使其支持CORS。
 
 只展示了最基本的功能，有额外需要的可以根据实际情况进行修改。
 
